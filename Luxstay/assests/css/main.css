@@ -1,0 +1,643 @@
+/* HEADER */
+.header{
+    width: 100%;
+    height: 80px;
+    box-shadow: 0px 0.02px 2px 0.5px #ccc;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+}
+.sticky{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header-logo-wrapper{
+    border-radius: 30px;
+    padding: 7px;
+    background-color: #F5F5F5;
+    margin-left: 45px;
+    margin-right: 15px;
+}
+
+.logo-brand:hover{
+    fill: tomato;
+    cursor: pointer;
+}
+
+.header-search-wrapper{
+    box-shadow: 0.4px 1px 3px 0.5px #ccc;
+    height: 48px;
+    width: 600px;
+    line-height: 48px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.search-box{
+    position: relative;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.search-box-input{
+    border: none;
+    outline: none;
+    height: 48px;
+}
+
+.search-box-input::placeholder{
+    font-weight: bold;
+    color: black;
+    font-size: 12px;
+}
+.search-box
+.search-box-text{
+    padding: 10px 16px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.search-box-text{
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 14px;
+}
+
+.box-seperate::after{
+    content: "";
+    display: block;
+    border-left: 2px solid #ccc;
+    height: 30px;
+    position: absolute;
+    top: 25px;
+    margin-right: 23px;
+}
+
+.number-guest-box{
+    display: flex;
+    align-items: center;    
+}
+
+.number-guest-box:focus{
+    border: 1px solid black;
+}
+
+.btn-search{
+    width: 56px;
+    height: 36px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    margin: 0px 10px;
+}
+
+.btn-search:hover{
+    filter: brightness(90%);    
+}
+
+.header-navbar-box{
+    margin-left: auto;
+    margin-right: 0;
+    height: 48px;
+    position: relative;
+}
+
+.header-navbar-item{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-navbar-item-link{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-right: 32px;
+    font-size: 14px;
+}
+
+.header-navbar-item-link:hover{
+    color: var(--hover-color);
+}
+
+.change-button{
+    margin-right: 45px;
+}
+
+#change-money-box{
+    height: 35px;
+    background-color: #F6F6F6;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.change-money-text{
+    margin: 0px 7px;
+}
+
+/* <!--  MONEY CHANGE BOX --> */
+.money-change-type-wrapper{
+    display: none;
+    grid-template-columns: auto auto;
+    position: absolute;
+    top: 70px;
+    right: 33px;
+    width: 500px;
+    padding: 8px;
+    border-radius: 3px;
+    background-color: var(--white-color);
+    border: 1px solid var(--gray-color);
+    box-shadow: 0px 0.02px 2px 2px #ccc;
+}
+
+.money-change-type-wrapper::after{
+    content: "";
+    border: solid;
+    position: absolute;
+    border-width: 6px 6px;
+    top: -6px;
+    right: 30px;
+    transform: rotate(45deg);
+    border-color: var(--gray-color) transparent  transparent var(--gray-color); 
+}
+
+.icon-and-text-box{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 8px;
+    height: 24px;
+}
+
+.icon-and-text-box:hover .money-short-text {
+    color: var(--hover-color);
+    cursor: pointer;
+}
+
+.icon-and-text-box:hover .money-text{
+    color: var(--hover-color);
+    cursor: pointer;
+}
+
+.money-text{
+    padding: 0px 12px;
+    font-size: 16px;
+    margin: 0px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.money-short-text{
+    margin: 0px;
+    padding: 0px 12px;
+    font-size: 16px;
+}
+
+.money-type-box{
+    border-left: 1px solid var(--line-color);
+}
+
+/* Slideshow wrapper */
+.content-wrapper{
+    position: relative;
+}
+
+.prev, .next {
+    background-color: rgba(0,0,0,.5);
+    border-radius: 50px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 0;
+    bottom: 130px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.next{
+    right: 25px;
+}
+
+.slideItems{
+    cursor: pointer;
+}
+
+/* CONTENT */
+.slider-img{
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.heading-h1-text,
+.normal-text,
+.text-link{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.heading-h1-text{
+    font-size: 30px;
+}
+
+.normal-text{
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.text-link:hover{
+    color: var(--hover-color);
+}
+
+.places-infor{
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-location{
+    height: 310px;
+    width: 248px;
+    border-radius: 6px;
+}
+
+.places-items{
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.availale-location,
+.name-location{
+    position: absolute;
+    color: var(--white-color);
+}
+
+.availale-location{
+    top: 270px;
+    left: 0;
+    margin-left: 55px;
+    font-size: 15px;
+}
+
+.name-location{
+    top: 220px;
+    margin-left: 50px;
+    font-size: 20px;
+    text-decoration: bold;
+}
+
+.discount-slider{
+    display: flex;
+    justify-content: space-around;
+}
+
+.discount-img{
+    width: 422px;
+    height: 186px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.request-luxstay-img{
+    width: 312px;
+    height: 196px;
+    border-radius: 5px;
+}
+
+.request-box{
+    display: flex;
+    justify-content: space-around;
+}
+
+.request-luxstay-info{
+    width: 312px;
+    margin-top: 12px;
+    text-decoration: none;
+    line-height: 1.0;
+}
+
+.request-luxstay-slider,
+.info-descripton,
+.info-name{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.request-luxstay-slider:hover{
+    color: var(--hover-color);
+}
+
+.info-name{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.info-description{
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.discover-info-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.discover-info{
+    position: relative;
+}
+
+.discover-img{
+    width: 422px;
+    height: 265px;
+    object-fit: cover;
+}
+
+.name-discover{
+    border-radius: 10px;
+    background: rgba(0,0,0,.2);
+    border: none;
+    font-size: 15px;
+    min-width: 214px;
+    padding: 4px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--white-color);
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+.name-discover:hover{
+    background-color: #5f5f5f;
+}
+
+.discover-title{
+    color: var(--white-color);
+    position: absolute;
+    top: 200px;
+    left: 40px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.manual-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.maunual-img{
+    width: 248px;
+    border-radius: 4px;
+}
+
+.luxstay-download{
+    display: flex;
+}
+
+.download-display,
+.download-info{
+    width: 50%;
+}
+
+.download-info{
+    flex: 1;
+}
+
+.phone-display{
+    width: 100%;
+}
+
+.logo-with-text{
+    height: 60px;
+}
+
+.big-title-heading-text{
+    font-size: 30px;
+}
+
+.download-info > .normal-text{
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.download-place{
+    margin-top: 50px;
+    display: flex;
+}
+
+.download--thru-qrcode{
+    padding: 0 16px;
+}
+
+.download-thru-store{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    align-items: center;
+}
+
+.qrcode-download{
+    height: 200px;
+    padding: 12px;
+    border: 1px solid rgba(0,0,0,.09);
+}
+
+.appstore-download,
+.huawei-download,
+.google-place-download{
+    padding: 0px 8px;
+    height: 55px;
+    width: 180px;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+.footer{
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.call-center{
+    display: flex;
+    flex-direction: column;
+}
+
+.call-center-box{
+    display: flex;
+    align-items: center;
+    line-height: 2;
+    margin-top: 10px;
+}
+
+.call-center > .logo-with-text{
+    width: 200px;
+}
+
+.about-item-content > .normal-text{
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.about-item-content > .normal-text:hover{
+    color: var(--hover-color);
+    cursor: pointer;
+ }
+
+.title-text{
+    text-align: justify;
+    display: block;
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+.heading-title{
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+.about-item-content{
+    flex: 0 10 auto;
+    margin-left: 15px;
+}
+
+.items-list{
+    padding-left: 0px;
+    list-style: none;
+    line-height: 2.5;
+}
+
+.item-link{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 15px;
+}
+
+.item-link:hover{
+    color: var(--hover-color);
+}
+
+.luxstay-download__footer > .download-place{
+    height: 150px;
+    margin-top: 0px;
+}
+
+.download--thru-qrcode__footer > .qrcode-download{
+   height: 100px;
+}
+
+.luxstay-download__footer 
+> .download-place
+> .download--thru-qrcode{
+    padding: 0px;
+}
+
+.download-place > .download--thru-store__footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.download--thru-store__footer > .download-link > .appstore-download,
+.download--thru-store__footer > .download-link > .huawei-download,
+.download--thru-store__footer > .download-link > .google-place-download{
+    height: 30px;
+}
+
+/*  CERTIFICATE AND SOCIAL */
+.certificate{
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+}
+
+.list-bank,
+.list-certificate,
+.list-social{
+    display: flex;
+}
+
+.hidden-div{
+    width: 140px;
+    visibility: hidden;
+}
+
+.free-space{
+    width: 50px;
+    visibility: hidden;
+}
+
+/* ADDRESS LANDING  */
+.landing{
+    text-align: center;
+}
+
+.landing-text{
+    text-align: justify;
+    line-height: 2;
+    font-size: 15px;
+    color: #999;
+}
+
+/* ICON */
+.fa-search,
+.fa-calendar,
+.fa-user,
+.fa-arrow-down{
+    font-size: 12px;
+    color: var(--gray-color);
+}
+
+.fa-calendar,
+.fa-user{
+    margin: 0px 14px;
+}
+
+.change-money-country-icon{
+    width: 24px;
+    height: 24px;
+}
+
+
+/* header */
+    .icon-number-box{
+        padding: 0px;
+        color: white;
+    }
+
+    .icon-search-box{
+        padding: 15px;
+        color: var(--gray-color);
+    }
+
+/* footer */
+    .certificate-image{
+        height: 40px;
+    }
+
+    .fa-facebook,
+    .fa-youtube-square,
+    .fa-instagram-square{
+        font-size: 30px;
+        color: #484848;
+    }
+
+    .radius-icon{
+        border-radius: 50px;
+    }
+
+    .pd-left-icon{
+        padding-left: 12px;
+    }
